@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="counter-container">
+        <h1>Counter Program</h1>
+        <label id="countLabel">0</label>
+
+        <div id="settings">
+            <label>Step: 
+                <input type="number" id="stepInput" value="1" min="1">
+            </label>
+            <label>Max: 
+                <input type="number" id="maxInput" value="999">
+            </label>
+            <label>Min: 
+                <input type="number" id="minInput" value="-999">
+            </label>
+        </div>
+
+        <div id="btnContainer">
+            <button id="decreaseBtn" class="buttons">Decrease</button>
+            <button id="resetBtn" class="buttons">Reset</button>
+            <button id="increaseBtn" class="buttons">Increase</button>
+        </div>
+
+        <p id="message"></p>
+        <button id="toggleTheme">Toggle Theme</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

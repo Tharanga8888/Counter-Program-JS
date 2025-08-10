@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.4s, color 0.4s;
+}
+
+.light-theme {
+    background: #f5f5f5;
+    color: #222;
+}
+
+.dark-theme {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+#counter-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#countLabel {
+    display: block;
+    font-size: 6em;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s;
+}
+
+.count-animate {
+    transform: scale(1.2);
+    color: #ff9800;
+}
+
+#settings {
+    margin: 15px 0;
+}
+
+#settings input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+#btnContainer {
+    margin-top: 15px;
+}
+
+.buttons {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(100, 100%, 56%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: hsl(100, 100%, 74%);
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+#toggleTheme {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    color: inherit;
+    cursor: pointer;
+}
